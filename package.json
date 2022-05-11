@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "P3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JefStartDev/ohmyfood.git"
+  },
+  "author": "jef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JefStartDev/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/JefStartDev/ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}

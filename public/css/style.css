@@ -56,7 +56,8 @@ main .infos {
   background-color: #fafafa;
   justify-content: space-evenly;
   margin: 5px;
-  border-radius: 15px;
+  padding: 5px;
+  border-radius: 18px;
 }
 .step__thumb:hover {
   background-color: #9356dc;
@@ -80,4 +81,12 @@ main .infos {
   display: inline-block;
   padding: 0.5rem;
   border-radius: 50%;
+}
+.restos {
+  background-color: #f3f3f3;
+  padding-top: 35px;
+}
+.restos img {
+  width: 70%;
+  object-fit: cover;
 }
