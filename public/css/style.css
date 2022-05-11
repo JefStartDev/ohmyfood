@@ -31,6 +31,8 @@ main .infos {
   color: #ffff;
   padding: 12px;
   border-radius: 50px;
+  margin-top: 15px;
+  margin-bottom: 25px;
   background: rgb(255, 122, 218);
   background: linear-gradient(
     180deg,
@@ -39,8 +41,10 @@ main .infos {
   );
   box-shadow: 0px 3px 10px grey;
 }
-.explorer p {
-  font-weight: lighter;
+.explorer:hover {
+  transform: scale(1.01);
+  transition: all 150ms;
+  opacity: 0.8;
 }
 .step {
   display: flex;
@@ -51,10 +55,14 @@ main .infos {
 .step__thumb {
   background-color: #fafafa;
   justify-content: space-evenly;
-
   margin: 5px;
   border-radius: 15px;
 }
+.step__thumb:hover {
+  background-color: #9356dc;
+  background: rgba(147, 86, 220, 0.3);
+}
+
 .step__thumb--card {
   display: flex;
   flex-wrap: wrap;
