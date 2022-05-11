@@ -11,6 +11,7 @@ header {
   justify-content: center;
   box-shadow: 0px 2px 2px grey;
 }
+
 main .ville {
   display: flex;
   justify-content: center;
@@ -18,40 +19,40 @@ main .ville {
   gap: 1rem;
   background-color: #f3f3f3;
 }
+
 main .infos {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
   background-color: #fafafa;
   padding-bottom: 20px;
 }
+
 .explorer {
-  color: #ffff;
+  color: white;
   padding: 12px;
   border-radius: 50px;
   margin-top: 15px;
   margin-bottom: 25px;
   background: rgb(255, 122, 218);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 122, 218, 1) 10%,
-    rgba(147, 86, 220, 1) 90%
-  );
+  background: linear-gradient(180deg, rgb(255, 122, 218) 10%, rgb(147, 86, 220) 90%);
   box-shadow: 0px 3px 10px grey;
 }
+
 .explorer:hover {
   transform: scale(1.01);
   transition: all 150ms;
   opacity: 0.8;
 }
+
 .step {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 20px;
 }
+
 .step__thumb {
   background-color: #fafafa;
   justify-content: space-evenly;
@@ -59,6 +60,7 @@ main .infos {
   padding: 5px;
   border-radius: 18px;
 }
+
 .step__thumb:hover {
   background-color: #9356dc;
   background: rgba(147, 86, 220, 0.3);
@@ -71,8 +73,9 @@ main .infos {
   padding: 5px;
   gap: 1rem;
 }
+
 .step__number {
-  color: #ffff;
+  color: white;
   background-color: #9356dc;
   text-align: center;
   transform: translateX(-18px);
@@ -82,11 +85,15 @@ main .infos {
   padding: 0.5rem;
   border-radius: 50%;
 }
+
 .restos {
   background-color: #f3f3f3;
   padding-top: 35px;
 }
+
 .restos img {
-  width: 70%;
+  width: 80%;
   object-fit: cover;
 }
+
+/*# sourceMappingURL=style.css.map */
