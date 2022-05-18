@@ -1,8 +1,10 @@
-@import "./sass/base";
-@import "./sass/layout/header";
-@import "./sass/layout/index-main";
-@import "./sass/components/buttons";
-@import "./sass/layout/footer";
+@use "./sass/base";
+@use "./sass/layout/header";
+@use "./sass/layout/index-main";
+@use "./sass/components/buttons";
+@use "./sass/layout/footer";
+@use "./sass/utils/box-shadow";
+@use "./sass/utils/zoom";
 
 
 
@@ -40,15 +42,23 @@ margin-top: 20px;
 border-radius: 20px;
 padding: 0px;
 @media (min-width:768px){
-  width: 20%;
+  width: 100%;
+grid-template-columns: 0.5fr 1fr 0.5fr ;
+text-align: center;
+  }
 }
-}
+
 .restos__card--infos{
  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
+  @media (min-width:768px){
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+  }
 }
 .restos__card--infos h3, p{
   margin: 5px;
@@ -61,6 +71,9 @@ padding: 0px;
   padding: 0px;
   @media (min-width:768px){
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
   }
 }
 

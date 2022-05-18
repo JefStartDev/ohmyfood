@@ -1,3 +1,7 @@
+@use "../utils/box-shadow.scss";
+@use "../utils/zoom";
+
+
 .explorer {
     color: #ffff;
     padding: 12px;
@@ -6,12 +10,10 @@
     margin-bottom: 25px;
     background: rgb(255, 122, 218);
     background: rgb(255,122,218);
-background: linear-gradient(175deg, rgba(255,122,218,1) 10%, rgba(147,86,220,0.9164040616246498) 69%);
-    box-shadow: 0px 3px 10px grey;
+    background: linear-gradient(175deg, rgba(255,122,218,1) 10%, rgba(147,86,220,0.9164040616246498) 69%);
+    @include box-shadow.box-shadow;
     &:hover {
-      transform: scale(1.01);
-      transition: all 150ms;
-      opacity: 0.8;
+      @include zoom.button-zoom;
       cursor: pointer;
     }
   }
@@ -38,7 +40,7 @@ background: linear-gradient(175deg, rgba(255,122,218,1) 10%, rgba(147,86,220,0.9
       margin: 15px;
       padding: 10px;
       border-radius: 20px;
-      box-shadow: 2px 4px 8px lightgrey ;
+      @include box-shadow.box-shadow;
       &:hover {
         background-color: #9356dc;
         background: rgba(147, 86, 220, 0.3);
