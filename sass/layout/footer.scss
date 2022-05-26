@@ -1,17 +1,29 @@
+@use "../utils/variables";
+
 footer{
     color:#ffff;
     background-color:#2d3235 ;
     padding: 20px ;
-    + h1{
+     h1{
       font-size: 19px;
       margin: 10px 0px 20px;
+      @media (min-width:variables.$breakpoint){
+        text-align: center;  
+        font-size: 2rem;
+      }
     }
   }
+
+  
   .footer-list ul{
     list-style: none;
     line-height: 25px;
     padding: 0;
     text-align: left;
+    @media (min-width:variables.$breakpoint){
+      text-align: center;
+      
+    }
   }
   
   .footer-icon{
