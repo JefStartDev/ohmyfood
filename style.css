@@ -40,7 +40,7 @@ section {
   position: absolute;
   height: 2rem;
   width: 5rem;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #1b6150;
   border-radius: 3px;
   text-align: center;
@@ -67,7 +67,8 @@ section {
   line-height: 15px;
   position: relative;
 }
-.restos__card--infos h3, .restos__card--infos p {
+.restos__card--infos h3,
+.restos__card--infos p {
   margin: 5px;
 }
 .restos__card--infos p {
@@ -81,7 +82,11 @@ section {
 }
 .restos__card--infos .fas {
   color: transparent;
-  background-image: linear-gradient(175deg, rgb(255, 122, 218) 10%, rgba(147, 86, 220, 0.9164040616) 69%);
+  background-image: linear-gradient(
+    175deg,
+    rgb(255, 122, 218) 10%,
+    rgba(147, 86, 220, 0.9164040616) 69%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -96,7 +101,11 @@ section {
     background-color: transparent;
   }
   100% {
-    background-color: linear-gradient(175deg, rgb(255, 122, 218) 10%, rgba(147, 86, 220, 0.9164040616) 69%);
+    background-color: linear-gradient(
+      175deg,
+      rgb(255, 122, 218) 10%,
+      rgba(147, 86, 220, 0.9164040616) 69%
+    );
   }
 }
 
@@ -154,7 +163,11 @@ header .home :hover {
   margin-bottom: 25px;
   background: rgb(255, 122, 218);
   background: rgb(255, 122, 218);
-  background: linear-gradient(175deg, rgb(255, 122, 218) 10%, rgba(147, 86, 220, 0.9164040616) 69%);
+  background: linear-gradient(
+    175deg,
+    rgb(255, 122, 218) 10%,
+    rgba(147, 86, 220, 0.9164040616) 69%
+  );
   box-shadow: 0px 3px 5px grey;
 }
 .explorer:hover {
@@ -175,7 +188,11 @@ header .home :hover {
   margin: 50px 0px 50px;
   background: rgb(255, 122, 218);
   background: rgb(255, 122, 218);
-  background: linear-gradient(175deg, rgb(255, 122, 218) 10%, rgba(147, 86, 220, 0.9164040616) 69%);
+  background: linear-gradient(
+    175deg,
+    rgb(255, 122, 218) 10%,
+    rgba(147, 86, 220, 0.9164040616) 69%
+  );
   box-shadow: 0px 3px 5px grey;
 }
 .order:hover {
@@ -217,8 +234,11 @@ header .home :hover {
   box-shadow: 0px 3px 5px grey;
 }
 .step__thumb:hover {
-  background-color: #9356dc;
   background: rgba(147, 86, 220, 0.3);
+}
+.step__thumb:hover .fas {
+  color: #9356dc;
+  transition: 0;
 }
 
 .step__thumb--card {
@@ -249,7 +269,7 @@ header .home :hover {
 }
 @media (min-width: 768px) {
   .step__number {
-    transform: translate(-100%, -35px);
+    transform: translate(-100%, -30px);
   }
 }
 
@@ -339,7 +359,11 @@ header.menu__header i {
 }
 header.menu__header .fas {
   color: transparent;
-  background-image: linear-gradient(175deg, rgb(255, 122, 218) 10%, rgba(147, 86, 220, 0.9164040616) 69%);
+  background-image: linear-gradient(
+    175deg,
+    rgb(255, 122, 218) 10%,
+    rgba(147, 86, 220, 0.9164040616) 69%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -354,7 +378,11 @@ header.menu__header .fas:hover {
     background-color: transparent;
   }
   100% {
-    background-color: linear-gradient(175deg, rgb(255, 122, 218) 10%, rgba(147, 86, 220, 0.9164040616) 69%);
+    background-color: linear-gradient(
+      175deg,
+      rgb(255, 122, 218) 10%,
+      rgba(147, 86, 220, 0.9164040616) 69%
+    );
   }
 }
 
@@ -411,7 +439,7 @@ section.menu {
   width: 30px;
   text-transform: uppercase;
   font-weight: lighter;
-  border-bottom: solid 2px #99E2D0;
+  border-bottom: solid 2px #99e2d0;
 }
 .food li {
   overflow: hidden;
@@ -454,7 +482,7 @@ section.menu {
   display: grid;
   margin-right: -5rem;
   place-items: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
 }
 .food__infos--check i {
@@ -465,7 +493,7 @@ section.menu {
   border-radius: 50%;
   font-size: 1.6rem;
   background-color: white;
-  color: #99E2D0;
+  color: #99e2d0;
 }
 .food .food-card {
   overflow: hidden;

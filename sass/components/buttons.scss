@@ -65,9 +65,13 @@
       padding: 10px;
       border-radius: 20px;
       @include box-shadow.box-shadow;
-      &:hover {
-        background-color: #9356dc;
+      &:hover  {
+       
         background: rgba(147, 86, 220, 0.3);
+        .fas{
+          color:#9356dc;
+          transition: 0;
+        }
       }
     }
   }
@@ -98,7 +102,7 @@
     padding: 0.5rem;
     border-radius: 50%;
     @media(min-width: 768px){
-      transform:translate(-100%, -35px);
+      transform:translate(-100%, -30px);
     }
   }
   
