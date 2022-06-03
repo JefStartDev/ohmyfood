@@ -258,6 +258,9 @@ footer {
   background-color: #2d3235;
   padding: 20px;
 }
+footer a {
+  color: white;
+}
 footer h1 {
   font-size: 19px;
   margin: 10px 0px 20px;
@@ -300,7 +303,16 @@ footer h1 {
     transform: rotate(0deg);
   }
 }
-@keyframes Fade-in {}
+@keyframes fadein-card {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .photo__resto {
   margin-bottom: -40px;
 }
@@ -310,6 +322,8 @@ footer h1 {
 }
 
 header.menu__header {
+  display: flex;
+  justify-content: left;
   z-index: 1;
   background-color: #f3f3f3;
   box-shadow: none;
@@ -320,7 +334,7 @@ header.menu__header {
 header.menu__header i {
   font-size: 1.7rem;
   position: absolute;
-  right: 5rem;
+  right: 1rem;
   top: 3.2rem;
 }
 header.menu__header .fas {
@@ -384,7 +398,7 @@ section.menu {
 @media (min-width: 768px) {
   .bloc-menu {
     grid-template-columns: repeat(3, 3fr);
-    width: 99%;
+    width: 100%;
   }
 }
 
@@ -418,8 +432,15 @@ section.menu {
 .food__infos {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
   padding: 0;
+}
+.food__infos h2,
+.food__infos p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .food__infos--price {
   width: fit-content;
@@ -447,6 +468,7 @@ section.menu {
   color: #99E2D0;
 }
 .food .food-card {
+  overflow: hidden;
   display: flex;
   width: 100%;
 }

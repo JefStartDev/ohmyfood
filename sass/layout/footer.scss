@@ -4,9 +4,13 @@ footer{
     color:#ffff;
     background-color:#2d3235 ;
     padding: 20px ;
+    a {
+      color: #ffff;
+    }
      h1{
       font-size: 19px;
       margin: 10px 0px 20px;
+
       @media (min-width:variables.$breakpoint){
         text-align: center;  
         font-size: 2rem;
