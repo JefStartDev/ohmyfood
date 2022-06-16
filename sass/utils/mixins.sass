@@ -1,0 +1,20 @@
+@mixin box-shadow
+    box-shadow: 0px 3px 5px grey
+
+@mixin button-zoom
+    transform: scale(1.01)
+    transition: all 150ms
+    opacity: 0.8
+
+@mixin btn-pink
+    color: #ffff
+    padding: 12px
+    border-radius: 50px
+    margin-top: 15px
+    margin-bottom: 25px
+    background: rgb(255, 122, 218)
+    background: rgb(255,122,218)
+    background: linear-gradient(175deg, rgba(255,122,218,1) 10%, rgba(147,86,220,0.9164040616246498) 69%)
+    &:hover
+        @include zoom.button-zoom
+        cursor: pointer

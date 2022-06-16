@@ -1,11 +1,21 @@
 @use "../sass/utils/variables";
-@use "../sass/utils/colors";
+
 
 
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
+.load-page{
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1000;
+  
+  color: #ffff;
+opacity: 0.90;
+transition: 3s;
+}
+
 h1{
   font-family: "shrikhand", cursive;
 }
@@ -39,8 +49,8 @@ section {
   position: absolute;
   height: 2rem;
   width: 5rem;
-  background-color:colors.$tertiary;
-  color:darken(colors.$tertiary, $amount: 50%);
+  background-color:variables.$tertiary;
+  color:darken(variables.$tertiary, $amount: 50%);
   border-radius: 3px;
   text-align: center;
   display: grid;

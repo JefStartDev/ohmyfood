@@ -1,5 +1,5 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/zoom";
+@use "../utils/mixins";
+
 
 
 .explorer {
@@ -12,9 +12,9 @@
     background: rgb(255, 122, 218);
     background: rgb(255,122,218);
     background: linear-gradient(175deg, rgba(255,122,218,1) 10%, rgba(147,86,220,0.9164040616246498) 69%);
-    @include box-shadow.box-shadow;
+    @include mixins.box-shadow;
     &:hover {
-      @include zoom.button-zoom;
+      @include mixins.button-zoom;
       cursor: pointer;
     }
   }
@@ -31,9 +31,9 @@
     background: rgb(255, 122, 218);
     background: rgb(255,122,218);
     background: linear-gradient(175deg, rgba(255,122,218,1) 10%, rgba(147,86,220,0.9164040616246498) 69%);
-    @include box-shadow.box-shadow;
+    @include mixins.box-shadow;
     &:hover {
-      @include zoom.button-zoom;
+      @include mixins.button-zoom;
       cursor: pointer;
     }
     @media (min-width:768px) {
@@ -64,13 +64,13 @@
       margin: 15px;
       padding: 10px;
       border-radius: 20px;
-      @include box-shadow.box-shadow;
+      @include mixins.box-shadow;
       &:hover  {
        
         background: rgba(147, 86, 220, 0.3);
         .fas{
           color:#9356dc;
-          transition: 0;
+          transition: 0ms;
         }
       }
     }

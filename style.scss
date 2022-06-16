@@ -3,10 +3,8 @@
 @use "./sass/layout/index-main";
 @use "./sass/components/buttons";
 @use "./sass/layout/footer";
-@use "./sass/utils/box-shadow";
-@use "./sass/utils/zoom";
-@use "./sass/utils/btn-pattern.scss";
-@use "./sass/utils/colors";
+@use "./sass/utils/mixins";
+@use "./sass/utils/variables";
 @use "./sass/pages/menus";
 
 
