@@ -4,14 +4,60 @@ body {
 }
 
 .load-page {
-  min-width: 100%;
-  min-height: 100%;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  height: 100vh;
   z-index: 1000;
-  color: white;
-  opacity: 0.9;
-  transition: 3s;
+  inset: 0;
+  background-color: white;
+  opacity: 0.85;
+  animation: loaderfadeout 1s forwards 2.5s;
+}
+.load-page__spinner {
+  width: 40.3px;
+  height: 40.3px;
+  border-radius: 50%;
+  background: #99e2d0;
+  transform-origin: top;
+  display: grid;
+  animation: spinner1 1.5s infinite linear;
+}
+.load-page__spinner::before, .load-page__spinner::after {
+  content: "";
+  grid-area: 1/1;
+  background: #ff79da;
+  border-radius: 50%;
+  transform-origin: top;
+  animation: inherit;
+  animation-name: spinner2;
+}
+.load-page__spinner::after {
+  background: #9356dc;
+  --s: 180deg;
 }
 
+@keyframes spinner1 {
+  0%, 20% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner2 {
+  50% {
+    transform: rotate(var(--s, 90deg));
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes loaderfadeout {
+  to {
+    opacity: 0;
+  }
+}
 h1 {
   font-family: "shrikhand", cursive;
 }
@@ -307,6 +353,22 @@ footer h1 {
   font-size: 0.9rem;
 }
 
+@keyframes spinner1 {
+  0%, 20% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner2 {
+  50% {
+    transform: rotate(var(--s, 90deg));
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 @keyframes reverse-spin {
   from {
     transform: rotate(-270deg);

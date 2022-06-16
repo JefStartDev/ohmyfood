@@ -1,6 +1,27 @@
 
+//loading-spinner//
 
+@keyframes spinner1 {
+    0%, 20% {
+       transform: rotate(0);
+    }
+ 
+    100% {
+       transform: rotate(360deg);
+    }
+ }
+ 
+ @keyframes spinner2 {
+    50% {
+       transform: rotate(var(--s,90deg));
+    }
+ 
+    100% {
+       transform: rotate(0);
+    }
+ }
 
+ //--Check-item--//
 
 @keyframes reverse-spin {
     from {
@@ -12,7 +33,7 @@
 }
 
 
-
+//fadein card-menu//
 
 @keyframes fadein-card {
     
