@@ -4,7 +4,19 @@
 @use "../utils/animations";
 
 
-
+.photo__resto{
+    text-align: center;
+  }
+  .photo__resto img{
+  max-width:100% ;
+  max-height: 25%;
+  margin: 0;
+  padding: 0;
+  @media (min-width:768px){
+    max-width: 85vw;
+    position: relative;
+  }
+  }
 
 .photo__resto{
     margin-bottom: -40px;
