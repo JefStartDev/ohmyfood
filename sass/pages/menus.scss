@@ -26,12 +26,15 @@ box-shadow: none;
 padding: 20px 0 0 20px;
 border-radius: 35px 35px 0 0;
 position: relative;
- 
+ h1{
+    font-size:2rem;
+    
+ }
 i{
     font-size: 1.7rem;
     position: absolute;
     right: 1rem;
-    top: 3.2rem;
+    top: 2.8rem;
     
   }  
  
@@ -72,9 +75,7 @@ margin: 0;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    h1{
-      padding-left: 0px;
-    }
+    
     & h3{
         margin: 0;
         padding: 0;

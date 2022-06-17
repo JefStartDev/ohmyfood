@@ -75,6 +75,23 @@ a {
   color: black;
 }
 
+.ville {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f3f3f3;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fafafa;
+  padding-bottom: 20px;
+}
+
 section {
   background-color: #f3f3f3;
   padding-top: 35px;
@@ -167,42 +184,6 @@ section {
   padding: 0px;
 }
 
-header {
-  font-family: "shrikhand", cursive;
-  font-size: larger;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 2px 2px grey;
-}
-header .home {
-  font-size: 1.5rem;
-  padding: 0px;
-  margin-right: 50px;
-}
-header .home :hover {
-  transform: translateX(-10px);
-  transition: 800ms;
-}
-
-.ville {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: #f3f3f3;
-}
-
-.infos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #fafafa;
-  padding-bottom: 20px;
-}
-
 .explorer {
   color: white;
   padding: 12px;
@@ -274,6 +255,9 @@ header .home :hover {
   border-radius: 20px;
   box-shadow: 0px 3px 5px grey;
 }
+.step__thumb .fas {
+  color: grey;
+}
 .step__thumb:hover {
   background: rgba(147, 86, 220, 0.3);
 }
@@ -312,6 +296,25 @@ header .home :hover {
   .step__number {
     transform: translate(-100%, -30px);
   }
+}
+
+header {
+  font-family: "shrikhand", cursive;
+  font-size: larger;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 2px grey;
+}
+header .home {
+  font-size: 1.5rem;
+  padding: 0px;
+  margin-right: 50px;
+}
+header .home :hover {
+  transform: translateX(-10px);
+  transition: 800ms;
 }
 
 footer {
@@ -408,11 +411,14 @@ header.menu__header {
   border-radius: 35px 35px 0 0;
   position: relative;
 }
+header.menu__header h1 {
+  font-size: 2rem;
+}
 header.menu__header i {
   font-size: 1.7rem;
   position: absolute;
   right: 1rem;
-  top: 3.2rem;
+  top: 2.8rem;
 }
 header.menu__header .fas {
   color: transparent;
@@ -450,9 +456,6 @@ section.menu {
     justify-content: flex-start;
     align-items: flex-start;
   }
-}
-.bloc-menu h1 {
-  padding-left: 0px;
 }
 .bloc-menu h3 {
   margin: 0;

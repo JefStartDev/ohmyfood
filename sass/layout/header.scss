@@ -1,3 +1,7 @@
+@use "../utils/variables";
+
+
+
 header {
     font-family: "shrikhand", cursive;
     font-size: larger;
@@ -5,7 +9,7 @@ header {
     position: relative;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 2px 2px grey;
+    box-shadow: 0px 2px 2px variables.$neutral;
     .home{
       font-size: 1.5rem;
       padding: 0px;

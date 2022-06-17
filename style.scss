@@ -1,10 +1,9 @@
 @use "./sass/base";
-@use "./sass/layout/header";
-@use "./sass/layout/index-main";
 @use "./sass/components/buttons";
-@use "./sass/layout/footer";
 @use "./sass/utils/mixins";
 @use "./sass/utils/variables";
+@use "./sass/layout/header";
+@use "./sass/layout/footer";
 @use "./sass/pages/menus";
 
 
