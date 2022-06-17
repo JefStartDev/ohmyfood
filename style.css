@@ -302,6 +302,7 @@ header {
   font-family: "shrikhand", cursive;
   font-size: larger;
   display: flex;
+  z-index: 2;
   position: relative;
   justify-content: center;
   align-items: center;
