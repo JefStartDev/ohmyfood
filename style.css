@@ -610,21 +610,4 @@ section.menu {
   justify-content: center;
 }
 
-.photo__resto {
-  text-align: center;
-}
-
-.photo__resto img {
-  max-width: 100%;
-  max-height: 25%;
-  margin: 0;
-  padding: 0;
-}
-@media (min-width: 768px) {
-  .photo__resto img {
-    max-width: 85vw;
-    position: relative;
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
