@@ -12,7 +12,7 @@ body {
   inset: 0;
   background: white;
   opacity: 0.85;
-  animation: loaderfadeout 1s forwards 2.5s;
+  animation: loaderfadeout 500ms forwards 2.5s;
 }
 .load-page__spinner {
   width: 40.3px;
